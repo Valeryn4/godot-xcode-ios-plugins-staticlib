@@ -376,6 +376,7 @@ Error GameCenter::request_remove_game(String save_name) {
     if (!is_authenticated()) {
         Dictionary ret;
         ret["type"] = "remove_game";
+        ret["save_name"] = save_name;
         ret["result"] = "error";
         ret["error"] = "unauthenticated";
         ret["error_code"] = ERR_UNAUTHORIZED;
@@ -390,11 +391,17 @@ Error GameCenter::request_remove_game(String save_name) {
     
     NSString *name_str = [[NSString alloc] initWithUTF8String:save_name.utf8().get_data()];
     
-    NSLog(@"GameCenter: fetch saved game\n");
+    NSLog(@"GameCenter: delete saved game\n");
     [player deleteSavedGamesWithName:name_str completionHandler:^(NSError * _Nullable error) {
         Dictionary ret;
         ret["type"] = "remove_game";
-        ret["save_name"] = name_str;
+        ret["save_name"] = save_name;
+        
+        if (@available(iOS 13.5, *)) {
+            ret["player_id"] = String::utf8([player.teamPlayerID UTF8String]);
+        } else {
+            ret["player_id"] = String::utf8([player.gamePlayerID UTF8String]);
+        }
         if (error == nil) {
             ret["result"] = "success";
             ret["error"] = "";
@@ -466,7 +473,7 @@ Error GameCenter::request_load_game() {
                     if (error == nil)
                     {
                         NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-                        ret["json"] = String::utf8([str UTF8String]);
+                        ret["save_data"] = String::utf8([str UTF8String]);
                         ret["result"] = "success";
                         ret["error"] = "";
                         ret["error_code"] = OK;
@@ -512,6 +519,7 @@ Error GameCenter::request_save_game(String save_name, String json) {
         ret["type"] = "save_game";
         ret["result"] = "error";
         ret["error"] = "unauthenticated";
+        ret["error_code"] = ERR_UNAUTHORIZED;
         ret["save_name"] = save_name;
         ret["save_data"] = json;
         if (@available(iOS 13.5, *)) {
@@ -542,10 +550,12 @@ Error GameCenter::request_save_game(String save_name, String json) {
             NSLog(@"Snapshot successfully saved");
             ret["result"] = "success";
             ret["error"] = "";
+            ret["error_code"] = OK;
         } else {
             NSLog(@"saveSnapshot error: %@", error.description);
             ret["result"] = "error";
             ret["error"] = String::utf8([error.description UTF8String]);
+            ret["error_code"] = (int64_t)error.code;
         }
         pending_events.push_back(ret);
         
