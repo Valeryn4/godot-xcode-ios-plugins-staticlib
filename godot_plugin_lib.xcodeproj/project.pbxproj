@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41D3470C20710588F8DF2718 /* libPods-godot_plugin_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 683F427EA0F1A3A2BFB43675 /* libPods-godot_plugin_lib.a */; };
+		84251C88299E628500D9C1FF /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84251C87299E628500D9C1FF /* GameKit.framework */; };
+		846EB367299E4ECE00737357 /* game_center.mm in Sources */ = {isa = PBXBuildFile; fileRef = 846EB363299E4ECE00737357 /* game_center.mm */; };
+		846EB368299E4ECE00737357 /* game_center_delegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 846EB365299E4ECE00737357 /* game_center_delegate.mm */; };
+		84F7445E294FE678004834EF /* spotlight.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84F7443C294FE677004834EF /* spotlight.mm */; };
+		84F7445F294FE678004834EF /* app_share_dialog.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84F7443F294FE677004834EF /* app_share_dialog.mm */; };
+		84F74460294FE678004834EF /* rate_me.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84F74442294FE677004834EF /* rate_me.mm */; };
+		84F74461294FE678004834EF /* in_app_store.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84F74445294FE677004834EF /* in_app_store.mm */; };
+		84F74462294FE678004834EF /* godot_plugin_fbcloud_class.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84F74448294FE677004834EF /* godot_plugin_fbcloud_class.mm */; };
+		84F74463294FE678004834EF /* godot_plugin_fb_analytics.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84F7444D294FE677004834EF /* godot_plugin_fb_analytics.mm */; };
+		84F74464294FE678004834EF /* godot_plugin_fb_analytics_class.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84F7444E294FE677004834EF /* godot_plugin_fb_analytics_class.mm */; };
+		84F74465294FE678004834EF /* godot_app_delegate_extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F74450294FE677004834EF /* godot_app_delegate_extension.m */; };
+		84F74466294FE678004834EF /* godot_user_notification_delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F74452294FE677004834EF /* godot_user_notification_delegate.m */; };
+		84F74467294FE678004834EF /* apn.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84F74455294FE677004834EF /* apn.mm */; };
+		84F74468294FE678004834EF /* godot_apn_delegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84F74456294FE677004834EF /* godot_apn_delegate.mm */; };
+		84F74469294FE678004834EF /* rmb_plugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84F74458294FE677004834EF /* rmb_plugin.cpp */; };
+		84F7446A294FE678004834EF /* godot_apple_event.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84F7445A294FE677004834EF /* godot_apple_event.mm */; };
+		84F7446B294FE678004834EF /* godot_apple_event_delegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84F7445B294FE677004834EF /* godot_apple_event_delegate.mm */; };
+		84F7446D294FEFCA004834EF /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F7446C294FEFCA004834EF /* CoreFoundation.framework */; };
+		84F7446F294FEFD1004834EF /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F7446E294FEFD1004834EF /* UniformTypeIdentifiers.framework */; };
+		84F74471294FEFDB004834EF /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F74470294FEFDB004834EF /* CoreServices.framework */; };
+		84F74473294FEFE3004834EF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F74472294FEFE3004834EF /* StoreKit.framework */; };
+		84F74475294FEFFB004834EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F74474294FEFFB004834EF /* UIKit.framework */; };
+		84F74477294FFF4B004834EF /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F74476294FFF4B004834EF /* CoreSpotlight.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84F74424294FE37D004834EF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5AA941129AF32A75FC45DDFE /* Pods-godot_plugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-godot_plugin.debug.xcconfig"; path = "Target Support Files/Pods-godot_plugin/Pods-godot_plugin.debug.xcconfig"; sourceTree = "<group>"; };
+		62116BE4617AFB7D31E6626D /* Pods-godot_plugin_lib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-godot_plugin_lib.release.xcconfig"; path = "Target Support Files/Pods-godot_plugin_lib/Pods-godot_plugin_lib.release.xcconfig"; sourceTree = "<group>"; };
+		683F427EA0F1A3A2BFB43675 /* libPods-godot_plugin_lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-godot_plugin_lib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B866318DA865D25798DE051 /* Pods-godot_plugin_lib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-godot_plugin_lib.debug.xcconfig"; path = "Target Support Files/Pods-godot_plugin_lib/Pods-godot_plugin_lib.debug.xcconfig"; sourceTree = "<group>"; };
+		84251C87299E628500D9C1FF /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/iOSSupport/System/Library/Frameworks/GameKit.framework; sourceTree = DEVELOPER_DIR; };
+		846EB363299E4ECE00737357 /* game_center.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = game_center.mm; sourceTree = "<group>"; };
+		846EB364299E4ECE00737357 /* game_center_delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game_center_delegate.h; sourceTree = "<group>"; };
+		846EB365299E4ECE00737357 /* game_center_delegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = game_center_delegate.mm; sourceTree = "<group>"; };
+		846EB366299E4ECE00737357 /* game_center.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game_center.h; sourceTree = "<group>"; };
+		84F74426294FE37D004834EF /* libgodot_plugin_lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libgodot_plugin_lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F7443A294FE677004834EF /* rmb_plugin.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rmb_plugin.hpp; sourceTree = "<group>"; };
+		84F7443C294FE677004834EF /* spotlight.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = spotlight.mm; sourceTree = "<group>"; };
+		84F7443D294FE677004834EF /* spotlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spotlight.h; sourceTree = "<group>"; };
+		84F7443F294FE677004834EF /* app_share_dialog.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = app_share_dialog.mm; sourceTree = "<group>"; };
+		84F74440294FE677004834EF /* app_share_dialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = app_share_dialog.h; sourceTree = "<group>"; };
+		84F74442294FE677004834EF /* rate_me.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = rate_me.mm; sourceTree = "<group>"; };
+		84F74443294FE677004834EF /* rate_me.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rate_me.h; sourceTree = "<group>"; };
+		84F74445294FE677004834EF /* in_app_store.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = in_app_store.mm; sourceTree = "<group>"; };
+		84F74446294FE677004834EF /* in_app_store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = in_app_store.h; sourceTree = "<group>"; };
+		84F74448294FE677004834EF /* godot_plugin_fbcloud_class.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = godot_plugin_fbcloud_class.mm; sourceTree = "<group>"; };
+		84F74449294FE677004834EF /* godot_plugin_fbcloud_class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = godot_plugin_fbcloud_class.h; sourceTree = "<group>"; };
+		84F7444B294FE677004834EF /* godot_plugin_fb_analytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = godot_plugin_fb_analytics.h; sourceTree = "<group>"; };
+		84F7444C294FE677004834EF /* godot_plugin_fb_analytics_class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = godot_plugin_fb_analytics_class.h; sourceTree = "<group>"; };
+		84F7444D294FE677004834EF /* godot_plugin_fb_analytics.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = godot_plugin_fb_analytics.mm; sourceTree = "<group>"; };
+		84F7444E294FE677004834EF /* godot_plugin_fb_analytics_class.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = godot_plugin_fb_analytics_class.mm; sourceTree = "<group>"; };
+		84F74450294FE677004834EF /* godot_app_delegate_extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = godot_app_delegate_extension.m; sourceTree = "<group>"; };
+		84F74451294FE677004834EF /* godot_apn_delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = godot_apn_delegate.h; sourceTree = "<group>"; };
+		84F74452294FE677004834EF /* godot_user_notification_delegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = godot_user_notification_delegate.m; sourceTree = "<group>"; };
+		84F74453294FE677004834EF /* godot_app_delegate_extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = godot_app_delegate_extension.h; sourceTree = "<group>"; };
+		84F74454294FE677004834EF /* apn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = apn.h; sourceTree = "<group>"; };
+		84F74455294FE677004834EF /* apn.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = apn.mm; sourceTree = "<group>"; };
+		84F74456294FE677004834EF /* godot_apn_delegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = godot_apn_delegate.mm; sourceTree = "<group>"; };
+		84F74457294FE677004834EF /* godot_user_notification_delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = godot_user_notification_delegate.h; sourceTree = "<group>"; };
+		84F74458294FE677004834EF /* rmb_plugin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rmb_plugin.cpp; sourceTree = "<group>"; };
+		84F7445A294FE677004834EF /* godot_apple_event.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = godot_apple_event.mm; sourceTree = "<group>"; };
+		84F7445B294FE677004834EF /* godot_apple_event_delegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = godot_apple_event_delegate.mm; sourceTree = "<group>"; };
+		84F7445C294FE677004834EF /* godot_apple_event_delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = godot_apple_event_delegate.h; sourceTree = "<group>"; };
+		84F7445D294FE677004834EF /* godot_apple_event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = godot_apple_event.h; sourceTree = "<group>"; };
+		84F7446C294FEFCA004834EF /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		84F7446E294FEFD1004834EF /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = DEVELOPER_DIR; };
+		84F74470294FEFDB004834EF /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		84F74472294FEFE3004834EF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/iOSSupport/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		84F74474294FEFFB004834EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		84F74476294FFF4B004834EF /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/CoreSpotlight.framework; sourceTree = DEVELOPER_DIR; };
+		DF251857FD1C171A8701F016 /* Pods-godot_plugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-godot_plugin.release.xcconfig"; path = "Target Support Files/Pods-godot_plugin/Pods-godot_plugin.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84F74423294FE37D004834EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84251C88299E628500D9C1FF /* GameKit.framework in Frameworks */,
+				84F74477294FFF4B004834EF /* CoreSpotlight.framework in Frameworks */,
+				84F74475294FEFFB004834EF /* UIKit.framework in Frameworks */,
+				84F74473294FEFE3004834EF /* StoreKit.framework in Frameworks */,
+				84F74471294FEFDB004834EF /* CoreServices.framework in Frameworks */,
+				84F7446F294FEFD1004834EF /* UniformTypeIdentifiers.framework in Frameworks */,
+				84F7446D294FEFCA004834EF /* CoreFoundation.framework in Frameworks */,
+				41D3470C20710588F8DF2718 /* libPods-godot_plugin_lib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5150B61BFC12335706E34544 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AA941129AF32A75FC45DDFE /* Pods-godot_plugin.debug.xcconfig */,
+				DF251857FD1C171A8701F016 /* Pods-godot_plugin.release.xcconfig */,
+				7B866318DA865D25798DE051 /* Pods-godot_plugin_lib.debug.xcconfig */,
+				62116BE4617AFB7D31E6626D /* Pods-godot_plugin_lib.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7EED12D59FF950BA71E914FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84251C87299E628500D9C1FF /* GameKit.framework */,
+				84F74476294FFF4B004834EF /* CoreSpotlight.framework */,
+				84F74474294FEFFB004834EF /* UIKit.framework */,
+				84F74472294FEFE3004834EF /* StoreKit.framework */,
+				84F74470294FEFDB004834EF /* CoreServices.framework */,
+				84F7446E294FEFD1004834EF /* UniformTypeIdentifiers.framework */,
+				84F7446C294FEFCA004834EF /* CoreFoundation.framework */,
+				683F427EA0F1A3A2BFB43675 /* libPods-godot_plugin_lib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		846EB362299E4ECE00737357 /* gamecenter */ = {
+			isa = PBXGroup;
+			children = (
+				846EB363299E4ECE00737357 /* game_center.mm */,
+				846EB364299E4ECE00737357 /* game_center_delegate.h */,
+				846EB365299E4ECE00737357 /* game_center_delegate.mm */,
+				846EB366299E4ECE00737357 /* game_center.h */,
+			);
+			path = gamecenter;
+			sourceTree = "<group>";
+		};
+		84F7441D294FE37D004834EF = {
+			isa = PBXGroup;
+			children = (
+				84F74439294FE677004834EF /* godot_plugin */,
+				84F74427294FE37D004834EF /* Products */,
+				5150B61BFC12335706E34544 /* Pods */,
+				7EED12D59FF950BA71E914FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84F74427294FE37D004834EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F74426294FE37D004834EF /* libgodot_plugin_lib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F74439294FE677004834EF /* godot_plugin */ = {
+			isa = PBXGroup;
+			children = (
+				846EB362299E4ECE00737357 /* gamecenter */,
+				84F7443A294FE677004834EF /* rmb_plugin.hpp */,
+				84F7443B294FE677004834EF /* spotlight */,
+				84F7443E294FE677004834EF /* appsharedialog */,
+				84F74441294FE677004834EF /* rateme */,
+				84F74444294FE677004834EF /* inappstore */,
+				84F74447294FE677004834EF /* godot_firebase_cloudmessage */,
+				84F7444A294FE677004834EF /* godot_firebase_analitics */,
+				84F7444F294FE677004834EF /* apn */,
+				84F74458294FE677004834EF /* rmb_plugin.cpp */,
+				84F74459294FE677004834EF /* apple_event */,
+			);
+			path = godot_plugin;
+			sourceTree = "<group>";
+		};
+		84F7443B294FE677004834EF /* spotlight */ = {
+			isa = PBXGroup;
+			children = (
+				84F7443C294FE677004834EF /* spotlight.mm */,
+				84F7443D294FE677004834EF /* spotlight.h */,
+			);
+			path = spotlight;
+			sourceTree = "<group>";
+		};
+		84F7443E294FE677004834EF /* appsharedialog */ = {
+			isa = PBXGroup;
+			children = (
+				84F7443F294FE677004834EF /* app_share_dialog.mm */,
+				84F74440294FE677004834EF /* app_share_dialog.h */,
+			);
+			path = appsharedialog;
+			sourceTree = "<group>";
+		};
+		84F74441294FE677004834EF /* rateme */ = {
+			isa = PBXGroup;
+			children = (
+				84F74442294FE677004834EF /* rate_me.mm */,
+				84F74443294FE677004834EF /* rate_me.h */,
+			);
+			path = rateme;
+			sourceTree = "<group>";
+		};
+		84F74444294FE677004834EF /* inappstore */ = {
+			isa = PBXGroup;
+			children = (
+				84F74445294FE677004834EF /* in_app_store.mm */,
+				84F74446294FE677004834EF /* in_app_store.h */,
+			);
+			path = inappstore;
+			sourceTree = "<group>";
+		};
+		84F74447294FE677004834EF /* godot_firebase_cloudmessage */ = {
+			isa = PBXGroup;
+			children = (
+				84F74448294FE677004834EF /* godot_plugin_fbcloud_class.mm */,
+				84F74449294FE677004834EF /* godot_plugin_fbcloud_class.h */,
+			);
+			path = godot_firebase_cloudmessage;
+			sourceTree = "<group>";
+		};
+		84F7444A294FE677004834EF /* godot_firebase_analitics */ = {
+			isa = PBXGroup;
+			children = (
+				84F7444B294FE677004834EF /* godot_plugin_fb_analytics.h */,
+				84F7444C294FE677004834EF /* godot_plugin_fb_analytics_class.h */,
+				84F7444D294FE677004834EF /* godot_plugin_fb_analytics.mm */,
+				84F7444E294FE677004834EF /* godot_plugin_fb_analytics_class.mm */,
+			);
+			path = godot_firebase_analitics;
+			sourceTree = "<group>";
+		};
+		84F7444F294FE677004834EF /* apn */ = {
+			isa = PBXGroup;
+			children = (
+				84F74450294FE677004834EF /* godot_app_delegate_extension.m */,
+				84F74451294FE677004834EF /* godot_apn_delegate.h */,
+				84F74452294FE677004834EF /* godot_user_notification_delegate.m */,
+				84F74453294FE677004834EF /* godot_app_delegate_extension.h */,
+				84F74454294FE677004834EF /* apn.h */,
+				84F74455294FE677004834EF /* apn.mm */,
+				84F74456294FE677004834EF /* godot_apn_delegate.mm */,
+				84F74457294FE677004834EF /* godot_user_notification_delegate.h */,
+			);
+			path = apn;
+			sourceTree = "<group>";
+		};
+		84F74459294FE677004834EF /* apple_event */ = {
+			isa = PBXGroup;
+			children = (
+				84F7445A294FE677004834EF /* godot_apple_event.mm */,
+				84F7445B294FE677004834EF /* godot_apple_event_delegate.mm */,
+				84F7445C294FE677004834EF /* godot_apple_event_delegate.h */,
+				84F7445D294FE677004834EF /* godot_apple_event.h */,
+			);
+			path = apple_event;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84F74425294FE37D004834EF /* godot_plugin_lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F7442F294FE37D004834EF /* Build configuration list for PBXNativeTarget "godot_plugin_lib" */;
+			buildPhases = (
+				5455E010A1002F43DE8C4D80 /* [CP] Check Pods Manifest.lock */,
+				84F74434294FE4BA004834EF /* Sources */,
+				84F74423294FE37D004834EF /* Frameworks */,
+				84F74424294FE37D004834EF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = godot_plugin_lib;
+			productName = godot_plugin;
+			productReference = 84F74426294FE37D004834EF /* libgodot_plugin_lib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84F7441E294FE37D004834EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					84F74425294FE37D004834EF = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 84F74421294FE37D004834EF /* Build configuration list for PBXProject "godot_plugin_lib" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84F7441D294FE37D004834EF;
+			productRefGroup = 84F74427294FE37D004834EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F74425294FE37D004834EF /* godot_plugin_lib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5455E010A1002F43DE8C4D80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-godot_plugin_lib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84F74434294FE4BA004834EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F74462294FE678004834EF /* godot_plugin_fbcloud_class.mm in Sources */,
+				84F74463294FE678004834EF /* godot_plugin_fb_analytics.mm in Sources */,
+				84F74466294FE678004834EF /* godot_user_notification_delegate.m in Sources */,
+				846EB368299E4ECE00737357 /* game_center_delegate.mm in Sources */,
+				84F74468294FE678004834EF /* godot_apn_delegate.mm in Sources */,
+				84F7446B294FE678004834EF /* godot_apple_event_delegate.mm in Sources */,
+				84F7446A294FE678004834EF /* godot_apple_event.mm in Sources */,
+				84F7445E294FE678004834EF /* spotlight.mm in Sources */,
+				84F74460294FE678004834EF /* rate_me.mm in Sources */,
+				84F74469294FE678004834EF /* rmb_plugin.cpp in Sources */,
+				84F74467294FE678004834EF /* apn.mm in Sources */,
+				84F74465294FE678004834EF /* godot_app_delegate_extension.m in Sources */,
+				84F74461294FE678004834EF /* in_app_store.mm in Sources */,
+				84F74464294FE678004834EF /* godot_plugin_fb_analytics_class.mm in Sources */,
+				84F7445F294FE678004834EF /* app_share_dialog.mm in Sources */,
+				846EB367299E4ECE00737357 /* game_center.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		84F7442D294FE37D004834EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				COREAUDIO_ENABLED = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GLES_ENABLED = "";
+				INSTALL_PATH = "";
+				IOS_ENABLED = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LIBYUV_DISABLE_NEON = "";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				NEED_LONG_INT = "";
+				NS_BLOCK_ASSERTIONS = 1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fblocks",
+					"-Wno-ambiguous-macro",
+					"-Wall",
+					"-Werror=return-type",
+					"-stdlib=libc++",
+					"$(inherited)",
+					"-DDEBUG_MEMORY_ALLOC",
+					"-DDISABLE_FORCED_INLINE",
+					"-D_DEBUG",
+					"-DDEBUG=1",
+					"-DDEBUG_ENABLED",
+					"-DPTRCALL_ENABLED",
+				);
+				PTRCALL_ENABLED = "";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
+				UNIX_ENABLED = "";
+			};
+			name = Debug;
+		};
+		84F7442E294FE37D004834EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				COREAUDIO_ENABLED = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GLES_ENABLED = "";
+				INSTALL_PATH = "";
+				IOS_ENABLED = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LIBYUV_DISABLE_NEON = "";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				NEED_LONG_INT = "";
+				NS_BLOCK_ASSERTIONS = 1;
+				OTHER_CFLAGS = (
+					"-fmessage-length=0",
+					"-fblocks",
+					"-Wno-ambiguous-macro",
+					"-Wall",
+					"-Werror=return-type",
+					"-ftree-vectorize",
+					"-stdlib=libc++",
+					"$(inherited)",
+					"-DNDEBUG",
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"-DPTRCALL_ENABLED",
+				);
+				PTRCALL_ENABLED = "";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SDKROOT = iphoneos;
+				UNIX_ENABLED = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84F74430294FE37D004834EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B866318DA865D25798DE051 /* Pods-godot_plugin_lib.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/Users/admin/Desktop/godot_3,
+					/Users/admin/Desktop/godot_3/platform/iphone,
+					"$(inherited)",
+				);
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REZ_SEARCH_PATHS = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84F74431294FE37D004834EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62116BE4617AFB7D31E6626D /* Pods-godot_plugin_lib.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/Users/admin/Desktop/godot_3,
+					/Users/admin/Desktop/godot_3/platform/iphone,
+					"$(inherited)",
+				);
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REZ_SEARCH_PATHS = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F74421294FE37D004834EF /* Build configuration list for PBXProject "godot_plugin_lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F7442D294FE37D004834EF /* Debug */,
+				84F7442E294FE37D004834EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F7442F294FE37D004834EF /* Build configuration list for PBXNativeTarget "godot_plugin_lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F74430294FE37D004834EF /* Debug */,
+				84F74431294FE37D004834EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84F7441E294FE37D004834EF /* Project object */;
+}
